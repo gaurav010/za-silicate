@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Genos:ital,wght@0,100..900;1,100..900&family=Playwrite+ZA:wght@100..400&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display:flex;
+    padding: 1rem;
+    gap: 2.5rem;
+}
+li, a{
+    list-style: none;
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: genos;
+    font-size: 1.5rem;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+}
+a:hover{
+    border-bottom: 2px solid white;
+}
+.logo{
+    padding: 6px 10px;
+}
+body{
+    background-color: rgb(43, 43, 43);
+    overflow-x: hidden;
+}
+.herotext{
+    color: azure;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    font-family: genos;
+    background-image: url(/Images/pacto-visual-cWOzOnSoh6Q-unsplash.png);
+    background-size: cover;
+    background-position: center;
+
+}
+.title1 {
+    position: absolute;
+    top: 42%;
+    left: 20%;
+    font-size: 4rem;
+    cursor: pointer;
+}
+.title1p{
+    position: absolute;
+    top: 52%;
+    left: 20%;
+    font-size: 1.7rem;
+    font-weight: 200;
+}
+.workbutton{
+     position: absolute;
+    top: 62%;
+    left: 20%;
+    font-size: 1.4rem;
+    font-family: genos;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.workbutton:hover{
+    box-shadow: 0px 0px 60px rgba(255, 255, 255, 0.50);
+}
+div.grid{
+    background-color: #252B27;
+    font-family: genos;
+    color: azure;
+}
+
+.photogrid1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6rem;
+    padding: 2rem;
+    
+}
+section{
+    padding: 3rem 7rem;
+    font-size: 2rem;
+}
+.boop{
+    position: absolute;
+    top: 70.5%;
+    right: 21%;
+    width: 70px;
+    height: 65px;
+    cursor: pointer;
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  background: grey;
+  padding: 1rem 2rem;
+  border: 2px solid #444;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+.close-btn{
+    cursor: pointer;
+}
+
+.catdisc{
+    font-weight: 300;
+    text-align: center;
+}
+.photohover{
+    transition: 0.3s ease-in-out;
+}
+.photohover:hover{
+box-shadow: 0px 0px 31.1px rgba(255, 255, 255, 0.25);
+ border-radius: 8px;
+ scale: 1.1;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    gap: 1rem;
+    grid-template-areas: 
+    "box1 box2 box3"
+    "box4 box5 box3";
+}
+@media (max-width: 1000px) {
+  .grid-container {
+     grid-template-areas: 
+    "box1 box3"
+    "box2 box3"
+    "box4 box5"  ;
+  }
+}
+    @media (max-width: 690px) {
+  .grid-container {
+     grid-template-areas: 
+    "box1"
+    "box2"
+    "box3"
+    "box3"
+    "box4"
+    "box5"  ;
+  }
+}
+ @media (max-width: 690px) {
+  .box {
+     scale: 0.8;
+  }
+}
+.box{
+    transition: 0.2s ease-in-out;
+
+}
+.box:hover{
+scale: 1.1;
+
+}
+.grid-section{
+    background-color:#252B27 ;
+}
+html{
+    scroll-behavior: smooth;
+}
+.enterprise{
+    padding: 1rem 6rem;
+}
+
+.h1enterprise{
+    padding: 2rem 0rem;
+    font-size: 3rem;
+}
+.enterprisephoto{
+    width: 85%;
+    display: block;
+    margin: auto;
+    filter: blur(20px);
+}
+.enterprisephoto:active{
+    filter: blur(0px);
+}
+.h1editing , .pediting{
+    padding: 0rem 6rem ;
+}
+.h1editing{
+    font-size: 3rem ;
+    padding-top: 3rem;
+}
+.pediting{
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+.editingdiv{
+    animation: basicedit both;
+    animation-timeline: view(50% 15%) ;
+}
+@keyframes basicedit {
+    from{
+       opacity: 0;
+       scale: 0.9;
+    }
+    to{
+       opacity: 1;
+       scale: 1;
+    }
+}
+.editingdiv{
+    /* padding: 0rem 6rem; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+.contact{
+    padding: 2rem ;
+    background-color: #000810;
+}
+.contactcat{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8rem 5rem 2rem;
+    gap: 1rem;
+}
+form{
+    display: flex;
+    gap: 3rem ;
+    flex-wrap: wrap;
+    padding: 1rem 5rem;
+    
+}
+label{
+    font-weight: 500;
+    font-size: 1.5rem;
+    
+}
+.adjesent{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="file"] {
+    font-size: 1.3rem;
+    padding: 0.8rem;
+    border-radius: 0px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    color: #fff;    
+}
+input[type="file"]{
+    height: 10rem;
+    font-size: 1.1rem;
+    padding: 5rem ;
+    text-align: center;
+}
+button[type="submit"] {
+  font-size: 1.4rem;
+  padding: 0.7rem 1.5rem;
+  margin-top: 1.5rem;
+  background-color: #fff;
+  color: #000810;
+  border: none;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: 0.3s ease-in-out;
+}
+button[type="submit"]:hover{
+    box-shadow: 0px 0px 60px rgba(255, 255, 255, 0.30);
+}
+.footer{
+    background-color: #000810;
+    border-radius: 16px;
+    margin: 2rem;
+}
+.footer-content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-text{
+    position: absolute;
+    text-align: center;   
+}
+.footer-text h1{
+    font-size: 3rem;
+}
+.footer-text p{
+    font-size: 1.5rem;
+}
+.footer-image{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+.footer-add{
+    display: flex;
+    object-fit: cover;
+    padding-top: 1rem;
+}
+.footer-link{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding-top: 0.5rem;
+}
