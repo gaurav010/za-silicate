@@ -202,12 +202,12 @@ html{
 }
 .editingdiv{
     animation: basicedit both;
-    animation-timeline: view(50% 15%) ;
+    animation-timeline: view(50% 20%) ;
 }
 @keyframes basicedit {
     from{
        opacity: 0;
-       scale: 0.9;
+       scale: 0.8;
     }
     to{
        opacity: 1;
